@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Survey</title>
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="mt-5">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-md-8">
+            <form id="regForm">
+              <h1 id="register">Survey Form</h1>
+              <div class="all-steps" id="all-steps">
+                <span class="step"><i class="fa fa-user"></i></span>
+                <span class="step"><i class="fa fa-map-marker"></i></span>
+                <span class="step"><i class="fa fa-cutlery"></i></span>
+                <span class="step"><i class="fa fa-shopping-cart"></i></span>
+                <span class="step"><i class="fa fa-car"></i></span>
+              </div>
+
+              <div class="tab">
+                <h6>What's your name?</h6>
+                <p>
+                  <input
+                    placeholder="Name..."
+                    oninput="this.className = ''"
+                    name="name"
+                    id="fname"
+                  />
+                </p>
+              </div>
+              <div class="tab">
+                <h6>What's your city?</h6>
+                <p>
+                  <input
+                    placeholder="City"
+                    oninput="this.className = ''"
+                    name="city"
+                    id="dd"
+                  />
+                </p>
+              </div>
+              <div class="tab">
+                <h6>Your Favourite restaurant?</h6>
+                <p>
+                  <input
+                    placeholder="Favourite restaurant"
+                    oninput="this.className = ''"
+                    name="restaurant"
+                    id="restaurant"
+                  />
+                </p>
+              </div>
+              <div class="tab">
+                <h6>Your Favourite Shopping mall?</h6>
+                <p>
+                  <input
+                    placeholder="Favourite Shopping mall"
+                    oninput="this.className = ''"
+                    name="restaurant"
+                    id="restaurant"
+                  />
+                </p>
+              </div>
+              <div class="tab">
+                <h6>What's your Favourite car?</h6>
+                <p>
+                  <input
+                    placeholder="Favourite car"
+                    oninput="this.className = ''"
+                    name="car"
+                    id="car"
+                  />
+                </p>
+              </div>
+
+              <div class="thanks-message text-center" id="text-message">
+                <h1>
+                  <i
+                    class="fa fa-check-circle"
+                    width="100"
+                    class="mb-4"
+                    style="color: green; size: 1000px"
+                  ></i>
+                </h1>
+                <h3>Thank you for your feedback!</h3>
+                <span
+                  >This is a sample xApp, and we do not save your data.</span
+                >
+              </div>
+              <div style="overflow: auto" id="nextprevious">
+                <div style="float: right">
+                  <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                    <i class="fa fa-angle-double-left"></i>
+                  </button>
+                  <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                    <i class="fa fa-angle-double-right"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js?id=1"></script>
+  </body>
+</html>
